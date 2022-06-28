@@ -7,7 +7,11 @@
     <title>メモ</title>
 </head>
 <body>
-サンプルです。
-{{ $message }}
+    <h1>メモ一覧</h1>
+    <ul>
+        @foreach($memos as $memo)
+        <li>{{ $memo['text']}}</li>
+        @endforeach
+    </ul>
 </body>
 </html>

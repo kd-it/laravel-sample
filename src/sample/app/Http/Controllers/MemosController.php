@@ -14,7 +14,8 @@ class MemosController extends Controller
      */
     public function index()
     {
-        return view('index', ['message' => "ハロー・ワールド"]);
+        $data = memos::all(); // メモ取得(全部)
+        return view('index', ['message' => "ハロー・ワールド", 'memos' => $data]); // 引数リストに加える
     }
 
     /**
