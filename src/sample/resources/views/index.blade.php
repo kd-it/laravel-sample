@@ -10,7 +10,9 @@
     <h1>メモ一覧</h1>
     <ul>
         @foreach($memos as $memo)
-        <li>{{ $memo['text']}}</li>
+        <li><a href="{{ route('memo.show', ['id' => $memo['id']])  }}">
+            {{ $memo['text']}}
+        </a></li>
         @endforeach
     </ul>
 </body>
