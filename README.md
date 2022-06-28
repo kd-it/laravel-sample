@@ -4,6 +4,10 @@
 
 **v2タグ以降を使う** ときは、拡張の類いは管理対象外のため、composerで入れる必要があるので注意してください。
 
+```
+PS> docker compose run frontend composer install
+PS> docker compose up -d
+```
 
 * v0
     * 初期段階(まだcomposerによるLaravel導入をする前)
