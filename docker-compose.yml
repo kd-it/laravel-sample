@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  frontend:
+    build: laravel
+    ports:
+      - 8888:80
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    # 初期段階ではまだlaravelを入れてないので、とりあえずsleepでコンテナを生かす
+    command: sleep infinity
