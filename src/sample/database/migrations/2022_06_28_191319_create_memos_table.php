@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('memos', function (Blueprint $table) {
             $table->id();
+            $table->string('text'); // メモのテキスト
             $table->timestamps();
         });
     }

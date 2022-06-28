@@ -9,6 +9,13 @@ PS> docker compose run frontend composer install
 PS> docker compose up -d
 ```
 
+**v3タグ以降を使う** ときは、migrateもかけてDBに対する初期化を行うようにしてください。
+
+```
+PS> docker compose run frontend php artisan migrate
+```
+
+
 * v0
     * 初期段階(まだcomposerによるLaravel導入をする前)
 * v1
