@@ -15,6 +15,8 @@ PS> docker compose up -d
 PS> docker compose run frontend php artisan migrate
 ```
 
+**v4タグ以降を使う** ときは、PHPMyAdminが http://127.0.0.1:8887 で使えるようになっているはずですから、
+適宜memosテーブル内に幾つかメモテキストを書き込んでからお試しください(表示されるはず)。
 
 * v0
     * 初期段階(まだcomposerによるLaravel導入をする前)
