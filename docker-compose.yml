@@ -6,7 +6,7 @@ services:
     ports:
       - 8888:80
     volumes:
-      - ./src:/var/www/html
+      - ./src/sample:/var/www/html
     working_dir: /var/www/html
-    # 初期段階ではまだlaravelを入れてないので、とりあえずsleepでコンテナを生かす
-    command: sleep infinity
+    # 開発サーバー起動
+    command: php artisan serve --port 80 --host 0.0.0.0
