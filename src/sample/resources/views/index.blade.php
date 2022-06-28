@@ -8,5 +8,6 @@
 </head>
 <body>
 サンプルです。
+{{ $message }}
 </body>
 </html>
